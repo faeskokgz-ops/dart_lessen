@@ -1,3 +1,4 @@
+// hi sensei
 // Глобальная переменная
 int totalCalls = 0;
 
