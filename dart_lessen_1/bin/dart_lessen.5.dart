@@ -10,7 +10,7 @@ class Book {
 
   // Именованный конструктор [cite: 20]
   Book.withRating(this._title, this._author, double rating) : _rating = 0.0 {
-    this.rating = rating; // Используем сеттер для валидации при создании 
+    this.rating = rating; // Используем сеттер для валидации при создании
   }
 
   // Геттеры [cite: 22]
@@ -18,7 +18,7 @@ class Book {
   String get author => _author;
   double get rating => _rating;
 
-  // Сеттер для rating с проверкой диапазона от 0 до 10 
+  // Сеттер для rating с проверкой диапазона от 0 до 10
   set rating(double value) {
     if (value >= 0 && value <= 10) {
       _rating = value;
@@ -66,14 +66,14 @@ class Library {
 void main() {
   // 1. Создаем 3 книги разными способами [cite: 46]
   // Через обычный конструктор [cite: 47]
-  Book book1 = Book('Harry Potter', 'J.K. Rowling'); 
-  
+  Book book1 = Book('Harry Potter', 'J.K. Rowling');
+
   // Через именованный конструктор withRating [cite: 48]
-  Book book2 = Book.withRating('Sherlock Holmes', 'Arthur Conan Doyle', 9.0); 
-  
+  Book book2 = Book.withRating('Sherlock Holmes', 'Arthur Conan Doyle', 9.0);
+
   // Через сеттер рейтинга [cite: 49]
   Book book3 = Book('The Hobbit', 'J.R.R. Tolkien');
-  book3.rating = 8.5; 
+  book3.rating = 8.5;
 
   // 2. Создаем библиотеку [cite: 50]
   Library cityLib = Library('City Library'); // [cite: 51]
